@@ -6,6 +6,8 @@ from matplotlib import animation as animation
 import numpy as np
 import re 
 
+from google.colab.patches import cv2_imshow
+
 grid_lines = True
 SAFE = False 
 easy_messages = None #if you don't want traceback turn this on
@@ -364,15 +366,15 @@ def show_img(img):#previously me_imshow
     Displays the open image file on screen.
     '''
     check_input(img,'cv')
-    cv2.imshow('picture',img)
+    cv2_imshow('picture',img)
     #this part looks ridiculous but it's a bug in cv2 with live interpreters.
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    cv2.waitKey(0)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
+    # cv2.waitKey(0)
     
 def read_img(img): #previously me_imread
     '''
