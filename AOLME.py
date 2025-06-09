@@ -468,7 +468,7 @@ def show_comps(img): #previously me_showcomps
     #cv2.waitKey(0)
     cv2_imshow(red_component)
     #cv2.waitKey(0)
-    import cv2_imshow(green_component)
+    cv2_imshow(green_component)
     #cv2.waitKey(0)
     #more of this due to cv2 bug...maybe put in a loop to look 'nicer'
     #cv2.destroyWindow('green')
