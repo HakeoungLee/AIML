@@ -366,7 +366,7 @@ def show_img(img):#previously me_imshow
     Displays the open image file on screen.
     '''
     check_input(img,'cv')
-    cv2_imshow('picture',img)
+    cv2_imshow(img)
     #this part looks ridiculous but it's a bug in cv2 with live interpreters.
     # cv2.waitKey(0)
     # cv2.destroyAllWindows()
