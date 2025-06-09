@@ -19,9 +19,9 @@ def grid_lines_on(width, height):
     print(width, height)
     fig1, ax = pyplot.subplots()
     ax.grid(linestyle='-',linewidth=0.5)
-    ax.set_xticks(np.linspace(0.5, height-0.5, height))
+    ax.set_xticks(np.linspace(0.5, height+0.5, height))
     ax.set_xticklabels(range(0, height, 1))
-    ax.set_yticks(np.linspace(0.5, width-0.5, width))
+    ax.set_yticks(np.linspace(0.5, width+0.5, width))
     ax.set_yticklabels(range(0, width, 1))
     return fig1,ax
 
