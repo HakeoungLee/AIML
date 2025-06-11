@@ -253,12 +253,12 @@ def  im_print(matrix): #previously aolme_imprint
     
 def vid_show(vid,fps):    #previously aolme_vidshow
     '''
-  A function that 'plays' a list of frame, creating a 2d video. 
-  Note, this must be set equal to some value to work!!!
+  A function that 'plays' a list of frames, creating a 2d video. 
+  Note, the arguments are mandatory.
   
   Inputs:
-  vid: A list of frames, set as [frame0,frame1,...,framen], where each frame is a nxn matrix of the same size.
-  fps: A number which represents the number of frames that should be played per second.
+  vid: A list of frames, set as [frame0,frame1,...,framen], where each frame is an n×n matrix of the same size.
+  fps: A number that represents the number of frames that should be played per second.
   
   Outputs:
   A visual animation containing each frame in the order listed. Returns the animation.
@@ -268,9 +268,12 @@ def vid_show(vid,fps):    #previously aolme_vidshow
     if not grid_lines:
         fig = pyplot.figure(1)
     else:
-        
         xticks = np.arange(-5.5,matrixf.shape[0]-0.5,5)
         yticks = np.arange(-5.5,matrixf.shape[1]-0.5,5)
+	print(" shape[0] = ", matrixf.shape[0])
+	print(" shape[1] = ", matrixf.shape[1])
+	print("xticks = ", xticks)
+	print("yticks = ", yticks)
         fig1,ax = grid_lines_on(xticks,yticks)
     fps = 1000./fps  
     if len(vid) < 1:
