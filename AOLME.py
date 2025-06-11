@@ -265,6 +265,7 @@ def vid_show(vid,fps):    #previously aolme_vidshow
   
   '''
     matrixf = make_rgb(vid[0]) 
+    grid_lines = False
     if not grid_lines:
         fig = pyplot.figure(1)
     else:
