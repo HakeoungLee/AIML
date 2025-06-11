@@ -287,8 +287,7 @@ def vid_show(vid,fps):    #previously aolme_vidshow
                 # frame = frame[0:20,0:20]
                 # vid[i]=frame
                 # i+=1
-        
-    im = pyplot.imshow(matrixf, interpolation='none')
+    # im = pyplot.imshow(matrixf, interpolation='none')
          
     # function to update figure
     def update_fig(j):
