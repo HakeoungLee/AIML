@@ -268,8 +268,8 @@ def vid_show(vid,fps):    #previously aolme_vidshow
     if not grid_lines:
         fig = pyplot.figure(1)
     else:
-        xticks = np.arange(-5.5,matrixf.shape[0]-0.5,5)
-        yticks = np.arange(-5.5,matrixf.shape[1]-0.5,5)
+        xticks = np.linspace(-5.5,matrixf.shape[0]-0.5,5)
+        yticks = np.linspace(-5.5,matrixf.shape[1]-0.5,5)
         print(" shape[0] = ", matrixf.shape[0])
         print(" shape[1] = ", matrixf.shape[1])
         print("xticks = ", xticks)
