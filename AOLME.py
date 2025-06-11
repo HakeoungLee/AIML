@@ -270,11 +270,11 @@ def vid_show(vid,fps):    #previously aolme_vidshow
     else:
         xticks = np.arange(-5.5,matrixf.shape[0]-0.5,5)
         yticks = np.arange(-5.5,matrixf.shape[1]-0.5,5)
-	print(" shape[0] = ", matrixf.shape[0])
-	print(" shape[1] = ", matrixf.shape[1])
-	print("xticks = ", xticks)
-	print("yticks = ", yticks)
-	fig1,ax = grid_lines_on(xticks,yticks)
+        print(" shape[0] = ", matrixf.shape[0])
+        print(" shape[1] = ", matrixf.shape[1])
+        print("xticks = ", xticks)
+        print("yticks = ", yticks)
+        fig1,ax = grid_lines_on(xticks,yticks)
     fps = 1000./fps  
     if len(vid) < 1:
         print ("Incorrect input, make sure you give function a video to play!")
