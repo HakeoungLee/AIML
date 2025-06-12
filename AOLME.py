@@ -296,7 +296,7 @@ def vid_show(vid,fps):    #previously aolme_vidshow
         pyplot.draw()
         return im,
     # kick off the animation
-    if (grid_lines):
+    if (False):
         ani = animation.FuncAnimation(fig1, update_fig, frames=range(len(vid)), 
                                 interval=fps, blit=False, repeat=True)
     else:
